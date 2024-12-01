@@ -1,0 +1,63 @@
+# Ignore build directories
+build/
+out/
+bin/
+obj/
+.cache/
+# Ignore dependency directories
+node_modules/
+vendor/
+vcpkg_installed/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userossc
+*.sln.docstates
+
+# Ignore compiled object files
+*.o
+*.obj
+*.dll
+*.exe
+*.so
+*.dylib
+*.a
+*.lib
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Ignore CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CMakeLists.txt.user
+
+# Ignore Visual Studio specific files
+*.vcxproj*
+*.vcxproj.filters
+*.vcxproj.user
+*.pdb
+
+# Ignore backup files
+*~
+*.bak
+*.swp
+
+# Ignore other C++ specific files
+*.gch
+*.pch
+*.ipch
+*.class
+*.pyc
+*.pyo
