@@ -28,10 +28,10 @@ bool PuzzleIO::submitAnswer(const int year, const int day, const int level, cons
     std::string cookie = getSessionCookie();
     std::string data = Http::post(url, fmt::format("level={}&answer={}", level, answer), cookie);
     std::unordered_map<std::string, std::function<bool()>> responseActions = {
-        {"That's the right answer!", []() -> bool { return true; }},
+        {"That's the right answer!", []() -> bool {std::cout << "That's the right answer!" << std::endl;  return true; }},
         {"You gave an answer too recently", []() -> bool { std::cout << "You gave an answer too recently" << std::endl; return false; }},
-        {"That's not the right answer", []() -> bool { std::cout << "Wrong answer" << std::endl; return false; }},
-        {"Did you already complete it?", []() -> bool { std::cout << "Already completed" << std::endl; return true; }}
+        {"That's not the right answer", []() -> bool { std::cout << "That's not the right answer" << std::endl; return false; }},
+        {"Did you already complete it?", []() -> bool { std::cout << "Did you already complete it?" << std::endl; return true; }}
     };
 
     for (const auto& [key, action] : responseActions) {

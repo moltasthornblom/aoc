@@ -16,7 +16,7 @@ include_directories(
 file(GLOB_RECURSE SRC_FILES "${CMAKE_SOURCE_DIR}/src/*")
 file(GLOB_RECURSE LIB_FILES "${CMAKE_SOURCE_DIR}/lib/*")
 add_executable(Aoc main.cpp ${SRC_FILES} ${LIB_FILES})
-
+message(STATUS "SRC_FILES: ${SRC_FILES}")
 find_package(CURL REQUIRED)
 target_link_libraries(Aoc PRIVATE CURL::libcurl)
 find_package(fmt CONFIG REQUIRED)

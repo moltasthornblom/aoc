@@ -1,6 +1,6 @@
 #include <iostream>
-#include "2024/day1.h"
+#include "src/2024/day3.h"
 int main(int, char**) {
-   Day1 day1;
-   day1.run();
+   Day3 day3;
+   day3.run();
 }
