@@ -4,10 +4,10 @@ This project contains solutions to the Advent of Code challenges. Each day prese
 
 | Day | Part 1 Execution Time | Part 2 Execution Time |
 |-----|-----------------------|-----------------------|
-| 1   | 5 ms  | 7 ms  |
+| 1   | 6 ms  | 6 ms  |
 | 2   | 24 ms  | 33 ms  |
-| 3   | 47 ms  | 385 ms  |
-| 4   |                       |                       |
+| 3   | 47 ms  | 382 ms  |
+| 4   | 33 ms  | 32 ms  |
 | 5   |                       |                       |
 | 6   |                       |                       |
 | 7   |                       |                       |

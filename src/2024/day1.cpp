@@ -13,6 +13,9 @@ pair<vector<int>, vector<int>> parse_input(const string& input) {
     vector<int> second_column;
     int first, second;
 
+    first_column.reserve(1000);
+    second_column.reserve(1000);
+
     while (ss >> first >> second) {
         first_column.push_back(first);
         second_column.push_back(second);
